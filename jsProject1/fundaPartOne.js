@@ -1,7 +1,6 @@
 "use strict";
 
-function showMe() {
-  console.log("a hoistings example");
+console.log(sumA(4, 5));
+function sumA(a, b) {
+  return a + b;
 }
-
-showMe();
