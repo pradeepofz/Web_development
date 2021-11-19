@@ -1,3 +1,22 @@
+// //creating Arrays
+
+// let d = new Object([1,2,3,4,5])
+// console.log(d);
+// let e = new Array(1,2,3,4,5)
+// console.log(e);
+// let f =[1,2,3,4,5];
+// console.log(f);
+
+//Array is an object structured as:
+// let f={
+//   0 : 1,
+//   1 : 2,
+//   2 : 3,
+//   3 : 4,
+//   4 : 5,
+// }
+
+
 const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
 const openingHours = {

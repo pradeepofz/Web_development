@@ -265,3 +265,20 @@ function maxOccurance(string){
 console.log(maxOccurance(string));
 
 //////////////////////////////////////////////////////
+
+const arr = [1,2,3,4,5,6,7,8,9];
+
+const chuckArray =(arr,n)=>{
+const chunks=[];
+// let index = 0;
+for(let i=0; i< arr.length ;i+=n){
+     chunks.push(arr.slice(i,i+n));
+    console.log(chunks);
+}
+// while(index < arr.length){
+//     chunks.push(arr.slice(index, index + n));
+//     index += n;
+// }
+return chunks;
+}
+console.log(chuckArray(arr,2));
