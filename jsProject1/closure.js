@@ -4,9 +4,9 @@
 
 let globalVar = "a";
 
-function outerFunction(outerArg){
-   let outerVar = "b";
-   function innerFunction(innerArg){
+function outerFunction(outerArg) {
+  let outerVar = "b";
+  function innerFunction(innerArg) {
     let innerVar = "c";
 
     console.log(outerArg);
@@ -14,8 +14,8 @@ function outerFunction(outerArg){
     console.log(globalVar);
     console.log(outerVar);
     console.log(innerVar);
-   }
-innerFunction(456);
+  }
+  innerFunction(456);
 
 };
 outerFunction(123);
@@ -27,6 +27,9 @@ const secureBooking = function () {
   let passengerCount = 0;
 
   return function () {
+    // console.log(`${passengerCount}passengers`);
+    // ++passengerCount;
+
     passengerCount++;
     console.log(`${passengerCount}passengers`);
   };
@@ -35,7 +38,7 @@ const secureBooking = function () {
 
 const booker = secureBooking();
 
-secureBooking();
+console.log(secureBooking());
 secureBooking();
 secureBooking();
 booker();
@@ -55,26 +58,26 @@ booker();
 
 // Define the closure 
 
-const rentPrice = function(initialRent){
+const rentPrice = function (initialRent) {
 
   let rent = initialRent;
 
-//Define private variables for closure
+  //Define private variables for closure
 
   return {
 
-    getRent(){
-    return console.log(rent);
+    getRent() {
+      return console.log(rent);
     },
 
-    incRent(amount){
-    rent += amount;
-    console.log(rent);
+    incRent(amount) {
+      rent += amount;
+      console.log(rent);
     },
 
-    decRent(amount){
-    rent -= amount;
-    console.log(rent);   
+    decRent(amount) {
+      rent -= amount;
+      console.log(rent);
     }
 
   }
@@ -98,30 +101,30 @@ RentDetail.getRent();
 
 //CLOSURE USE 2: Maintaining state between each call
 
-(function() { 
+(function () {
 
-  let multFn = function() { 
+  let multFn = function () {
     // This variable is local to the closure and holds 
     // its value inbetween multiple calls 
-   let mult = 9; 
+    let mult = 9;
 
-   return function(val) { 
-     mult = mult * val; 
-     return mult; 
-   }
+    return function (val) {
+      mult = mult * val;
+      return mult;
+    }
 
-  }; 
+  };
 
-  let actMult = multFn(); 
+  let actMult = multFn();
 
   // Call the method multiple times 
 
-  console.log(actMult(2)); 
-  console.log(actMult(3)); 
-  console.log(actMult(5)); 
+  console.log(actMult(2));
+  console.log(actMult(3));
+  console.log(actMult(5));
 
 }());
- 
+
 // output:
 // 18
 // 54
@@ -132,9 +135,10 @@ RentDetail.getRent();
 let f;
 const g = function () {
   const a = 23;
- f = function () {
+  return f = function () {
     console.log(a * 2);
   };
+
 };
 
 const h = function () {
@@ -144,13 +148,14 @@ const h = function () {
   };
 };
 
-g();
-f();
+console.log(g);
+console.log(g());
+console.log(f());
 console.dir(f);
 
 //reassign f
-h();
-f();
+console.log(h());
+console.log(f());
 console.dir(f);
 
 // output:
@@ -173,9 +178,9 @@ console.dir(f);
 //      return mult;
 //    } 
 //  } 
-  
+
 //  // Use the closure 
- 
+
 //    var mult2 = multFn(); 
 //  console.log(mult2(18));
 //  console.log(multFn());
@@ -192,7 +197,7 @@ console.dir(f);
 //Function returning function examples
 
 // function a() {
-      
+
 //   console.log('A!');
 
 //   function b(){
@@ -249,4 +254,32 @@ console.dir(f);
 //A
 // Function 'c' returns undefined
 
+/////////////////////NOT CLOSURES////////////////////
 
+const getNames = function () {
+  // get names from the database or API
+  let firstName = 'John',
+    lastName = 'Doe';
+
+  // return as an array
+  return [firstName, lastName];
+}
+const names = getNames();
+const firstName = names[0],
+  lastName = names[1];
+// const [firstName, lastName] = getNames();
+console.log(firstName, lastName);
+
+///////////////////////////////////////////////////////////////
+
+const arr = [1, 2, 3, 4, 5];
+
+function modifyArray(arr, callback) {
+  arr.push(100);
+  callback();
+}
+
+function callback() {
+  console.log("array has been modified", arr);
+}
+modifyArray(arr,callback);
