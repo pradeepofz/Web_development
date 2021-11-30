@@ -19,3 +19,4 @@ car.start.apply(aircraft,aircraftDetails)
 
 const toStart = car.start.bind(aircraft);
 toStart(100,'mumbai');
+//The bind() method creates a new function where “this” refers to the parameter in the parenthesis
