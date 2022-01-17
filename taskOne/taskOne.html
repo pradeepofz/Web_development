@@ -1,60 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Validate Form using JavaScript</title>
-    <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width,initial scale=1.0" /> -->
-    <!-- <script
-      src="https://kit.fontawesome.com/de284fc85d.js"
-      crossorigin="anonymous"
-    ></script> -->
-    <link
-      rel="stylesheet"
-      href="C:\Users\Balaji M\Desktop\Web_development\taskOne\taskOne.css"
-    />
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
     <div class="container">
-      <div class="header">
-        <h2>Create Account</h2>
-      </div>
-      <form id="form" class="form">
-        <div class="form-control">
-          <label for="username">Username</label>
-          <input type="text" placeholder="florinpop17" id="username" />
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="username">Email</label>
-          <input type="email" placeholder="a@florin-pop.com" id="email" />
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="username">Password</label>
-          <input type="password" placeholder="Password" id="password" />
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="username">Password check</label>
-          <input type="password" placeholder="Password two" id="password2" />
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
+        <header>
+            <h2 class="primary-heading">GLOBAL NETWORK PORTAL</h2>
+            <div class="oncall">
+                <i class="bi bi-telephone-fill"></i>
+                <p>On Call</p>
+            </div>
+        </header>
+        <nav>
+           <ul class="icon-lists">
+            <li class="icon-item"><a href="#"><i class="align bi bi-arrow-bar-right"></i></a></li>
+            <li class="icon-item"><a href="#"><i class="align bi bi-bar-chart"></i></a></li>
+            <li class="icon-item"><a href="#"><i class="align bi bi-123"></i></a></li>
+            <li class="icon-item"><a href="#"><i class="align bi bi-activity"></i></a></li>
+            <li class="icon-item"><a href="#"><i class="align bi bi-align-bottom"></i></a></li>
+            <li class="icon-item"><a href="#"><i class="align bi bi-align-center"></i></a></li>
+            <li class="icon-item"><a href="#"><i class="align bi bi-align-end"></i></a></li>
+            <li class="icon-item"><a href="#"><i class="align bi bi-align-middle"></i></a></li>
+           </ul> 
+        </nav>
+        <article>
+            <h5 class="secondary-heading">Dashboard</h5>
+            <div class="article-container">
+                <section>
+                    <h6 class="title">marvel</h6>
+                    <p class="title-description">Datacenter Overview</p>
+                    <div class="data-one">
+                        <div class="chart chart-one">
+                            <div class="pie-chart"></div>
+                            <div class="legend-names">
+                            <ul>
+                                <li class="legend-item">
+                                    <span class="legend-colorBox colorBox-one"></span>
+                                    <span class="legend-label">Number of Hosts Deployed</span>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-colorBox colorBox-two"></span>
+                                    <span class="legend-label">Number of Networks</span>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-colorBox colorBox-three"></span>
+                                    <span class="legend-label">Number of Interfaces</span>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="legend-percentages">
+                                <ul>
+                                    <li class="legend-percentages-label">40%</li>
+                                    <li class="legend-percentages-label">15%</li>
+                                    <li class="legend-percentages-label">45%</li>
+                                </ul>
+                            </div>
+                        </div>
+                            <div class="bandwidth-container">
+                                <p class="secondary-text">Interface Total Bandwidth</p>
+                                <div class="reading">
+                                    <div class="primary-text">40.978</div>
+                                    <div class="secondary-text">tbps</div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    
+                    <p class="view ">View More &rarr;</p>
+                </section>
+                <section>
+                    <h6 class="title">studio production network</h6>
+                    <p class="title-description">Request Overview</p>
+                    <div class="data-one">
+                        <div class="chart chart-two">
+                            <div class="donut-chart"></div>
+                            <div class="legend-names">
+                            <ul>
+                                <li class="legend-item">
+                                    <span class="legend-colorBox colorBox-one"></span>
+                                    <span class="legend-label">Number of Firewall Request</span>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-colorBox colorBox-two"></span>
+                                    <span class="legend-label">Number of Wireless Access Request</span>
+                                </li>
+                                <li class="legend-item">
+                                    <span class="legend-colorBox colorBox-three"></span>
+                                    <span class="legend-label">Number of VPN Access Request</span>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="legend-percentages">
+                                <ul>
+                                    <li class="legend-percentages-label">40%</li>
+                                    <li class="legend-percentages-label">15%</li>
+                                    <li class="legend-percentages-label">45%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <p class="view">View More &rarr;</p>
+                </section>
+                <section>
+                    <h6 class="title">motion picture production</h6>
+                    <div class="data-one">
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat</p>
+                    </div>
+                    <div class="line">
+                        <p class="view">View More &rarr;</p>
+                    </div>
+                    
 
-          <small>Error message</small>
-        </div>
-        <input type="submit"  class="submit" />
+                </section>
+                <section>
+                    <h6 class="title">searchlight</h6>
+                    <p class="title-description">Datacenter Overview</p>
+                    <div class="data-one">
+                        <div class="chart chart-three">
+                            <div class="pie-chart"></div>
+                            <div class="legend-names">
+                                <ul>
+                                    <li class="legend-item">
+                                        <span class="legend-colorBox colorBox-one"></span>
+                                        <span class="legend-label">Number of Hosts Deployed</span>
+                                    </li>
+                                    <li class="legend-item">
+                                        <span class="legend-colorBox colorBox-two"></span>
+                                        <span class="legend-label">Number of Networks</span>
+                                    </li>
+                                    <li class="legend-item">
+                                        <span class="legend-colorBox colorBox-three"></span>
+                                        <span class="legend-label">Number of Interfaces</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="legend-percentages">
+                                <ul>
+                                    <li class="legend-percentages-label">40%</li>
+                                    <li class="legend-percentages-label">15%</li>
+                                    <li class="legend-percentages-label">45%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    <p class="view">View More &rarr;</p>
+                </section>
+                <section>
+                    <h6 class="title">tcc title</h6>
+                    <div class="data-one">
+                    <img src="images/image2.jpeg" alt="Network Link Image">
+                    </div>
+                    <p class="view">View More &rarr;</p>
 
-        <!-- <button>Submit</button> -->
-      </form>
+                </section>
+                <section>
+                    <h6 class="title">learn more</h6>
+                    <div class="data-one">
+                    <img src="images/image1.jpeg" alt="Analytics image">
+                    </div>
+                    <p class="view">View More &rarr;</p>
+                </section>
+            </div>
+         </article>     
+        <footer>
+            <img class="company-logo" src="images/walt-disney.png " alt="The Walt Disney Studio logo">
+            <p>&copy;Copyright- The Walt Disney Studios - Studio technology - Motion Picture innovation</p>
+        </footer>
     </div>
-    <script src="C:\Users\Balaji M\Desktop\Web_development\taskOne\taskOne.js"></script>
-
-  </body>
+    
+    
+    
+    <script defer src="script.js"></script>
+</body>
 </html>
