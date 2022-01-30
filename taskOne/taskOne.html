@@ -7,6 +7,9 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -17,51 +20,84 @@
                 <p>On Call</p>
             </div>
         </header>
-        <nav>
-           <ul class="icon-lists">
-            <li class="icon-item"><a href="#"><i class="align bi bi-arrow-bar-right"></i></a></li>
-            <li class="icon-item"><a href="#"><i class="align bi bi-bar-chart"></i></a></li>
-            <li class="icon-item"><a href="#"><i class="align bi bi-123"></i></a></li>
-            <li class="icon-item"><a href="#"><i class="align bi bi-activity"></i></a></li>
-            <li class="icon-item"><a href="#"><i class="align bi bi-align-bottom"></i></a></li>
-            <li class="icon-item"><a href="#"><i class="align bi bi-align-center"></i></a></li>
-            <li class="icon-item"><a href="#"><i class="align bi bi-align-end"></i></a></li>
-            <li class="icon-item"><a href="#"><i class="align bi bi-align-middle"></i></a></li>
-           </ul> 
-        </nav>
-        <article>
-            <h5 class="secondary-heading">Dashboard</h5>
-            <div class="article-container">
-                <section>
-                    <h6 class="title">marvel</h6>
-                    <p class="title-description">Datacenter Overview</p>
-                    <div class="data-one">
-                        <div class="chart chart-one">
-                            <div class="pie-chart"></div>
-                            <div class="legend-names">
-                            <ul>
-                                <li class="legend-item">
-                                    <span class="legend-colorBox colorBox-one"></span>
-                                    <span class="legend-label">Number of Hosts Deployed</span>
-                                </li>
-                                <li class="legend-item">
-                                    <span class="legend-colorBox colorBox-two"></span>
-                                    <span class="legend-label">Number of Networks</span>
-                                </li>
-                                <li class="legend-item">
-                                    <span class="legend-colorBox colorBox-three"></span>
-                                    <span class="legend-label">Number of Interfaces</span>
-                                </li>
-                            </ul>
+        <main>
+            <nav>
+                <ul class="icon-lists">
+                   <li class="icon-item">
+                       <a class="item" href="#">
+                           <i class="align bi bi-arrow-bar-right make-blue"></i>
+                        </a>
+                    </li>
+                   <li class="icon-item active">
+                       <a class="item " href="#">
+                           <i class="align bi bi-bar-chart"></i>
+                        </a>
+                    </li>
+                   <li class="icon-item">
+                       <a class="item" href="#">
+                           <i class="align bi bi-123"></i>
+                        </a>
+                    </li>
+                   <li class="icon-item">
+                       <a class="item" href="#">
+                           <i class="align bi bi-activity"></i>
+                        </a>
+                    </li>
+                   <li class="icon-item">
+                       <a class="item" href="#">
+                           <i class="align bi bi-align-bottom"></i>
+                        </a>
+                    </li>
+                   <li class="icon-item">
+                       <a class="item" href="#">
+                           <i class="align bi bi-align-center"></i>
+                        </a>
+                    </li>
+                   <li class="icon-item">
+                       <a class="item" href="#">
+                           <i class="align bi bi-align-end"></i>
+                        </a>
+                    </li>
+                   <li class="icon-item">
+                       <a class="item" href="#">
+                           <i class="align bi bi-align-middle"></i>
+                        </a>
+                    </li>
+               </ul>
+           </nav>
+            <article>
+                <h5 class="secondary-heading">Dashboard</h5>
+                <div class="article-container">
+                    <section>
+                        <h6 class="title">marvel</h6>
+                        <p class="title-description">Datacenter Overview</p>
+                        <div class="data-one">
+                            <div class="chart chart-one">
+                                <div class="pie-chart"></div>
+                                <div class="legend-names">
+                                    <ul>
+                                        <li class="legend-item">
+                                            <span class="legend-colorBox colorBox-one"></span>
+                                            <span class="legend-label">Number of Hosts Deployed</span>
+                                        </li>
+                                        <li class="legend-item">
+                                            <span class="legend-colorBox colorBox-two"></span>
+                                            <span class="legend-label">Number of Networks</span>
+                                        </li>
+                                        <li class="legend-item">
+                                            <span class="legend-colorBox colorBox-three"></span>
+                                            <span class="legend-label">Number of Interfaces</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="legend-percentages">
+                                    <ul>
+                                        <li class="legend-percentages-label">40%</li>
+                                        <li class="legend-percentages-label">15%</li>
+                                        <li class="legend-percentages-label">45%</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="legend-percentages">
-                                <ul>
-                                    <li class="legend-percentages-label">40%</li>
-                                    <li class="legend-percentages-label">15%</li>
-                                    <li class="legend-percentages-label">45%</li>
-                                </ul>
-                            </div>
-                        </div>
                             <div class="bandwidth-container">
                                 <p class="secondary-text">Interface Total Bandwidth</p>
                                 <div class="reading">
@@ -69,120 +105,106 @@
                                     <div class="secondary-text">tbps</div>
                                 </div>
                             </div>
-                    </div>
-                    
-                    
-                    <p class="view ">View More &rarr;</p>
-                </section>
-                <section>
-                    <h6 class="title">studio production network</h6>
-                    <p class="title-description">Request Overview</p>
-                    <div class="data-one">
-                        <div class="chart chart-two">
-                            <div class="donut-chart"></div>
-                            <div class="legend-names">
-                            <ul>
-                                <li class="legend-item">
-                                    <span class="legend-colorBox colorBox-one"></span>
-                                    <span class="legend-label">Number of Firewall Request</span>
-                                </li>
-                                <li class="legend-item">
-                                    <span class="legend-colorBox colorBox-two"></span>
-                                    <span class="legend-label">Number of Wireless Access Request</span>
-                                </li>
-                                <li class="legend-item">
-                                    <span class="legend-colorBox colorBox-three"></span>
-                                    <span class="legend-label">Number of VPN Access Request</span>
-                                </li>
-                            </ul>
-                            </div>
-                            <div class="legend-percentages">
-                                <ul>
-                                    <li class="legend-percentages-label">40%</li>
-                                    <li class="legend-percentages-label">15%</li>
-                                    <li class="legend-percentages-label">45%</li>
-                                </ul>
+                        </div>
+                        <p class="view ">View More &rarr;</p>
+                    </section>
+                    <section>
+                        <h6 class="title">studio production network</h6>
+                        <p class="title-description">Requests Overview</p>
+                        <div class="data-one">
+                            <div class="chart chart-two">
+                                <div class="donut-chart"></div>
+                                <div class="legend-names">
+                                    <ul>
+                                        <li class="legend-item">
+                                            <span class="legend-colorBox colorBox-one"></span>
+                                            <span class="legend-label">Number of Firewall Request</span>
+                                        </li>
+                                        <li class="legend-item">
+                                            <span class="legend-colorBox colorBox-two"></span>
+                                            <span class="legend-label">Number of Wireless Access Request</span>
+                                        </li>
+                                        <li class="legend-item">
+                                            <span class="legend-colorBox colorBox-three"></span>
+                                            <span class="legend-label">Number of VPN Access Request</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="legend-percentages">
+                                    <ul>
+                                        <li class="legend-percentages-label">40%</li>
+                                        <li class="legend-percentages-label">15%</li>
+                                        <li class="legend-percentages-label">45%</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    
-                    <p class="view">View More &rarr;</p>
-                </section>
-                <section>
-                    <h6 class="title">motion picture production</h6>
-                    <div class="data-one">
-                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                              nisi ut aliquip ex ea commodo consequat</p>
-                    </div>
-                    <div class="line">
                         <p class="view">View More &rarr;</p>
-                    </div>
-                    
-
-                </section>
-                <section>
-                    <h6 class="title">searchlight</h6>
-                    <p class="title-description">Datacenter Overview</p>
-                    <div class="data-one">
-                        <div class="chart chart-three">
-                            <div class="pie-chart"></div>
-                            <div class="legend-names">
-                                <ul>
-                                    <li class="legend-item">
-                                        <span class="legend-colorBox colorBox-one"></span>
-                                        <span class="legend-label">Number of Hosts Deployed</span>
-                                    </li>
-                                    <li class="legend-item">
-                                        <span class="legend-colorBox colorBox-two"></span>
-                                        <span class="legend-label">Number of Networks</span>
-                                    </li>
-                                    <li class="legend-item">
-                                        <span class="legend-colorBox colorBox-three"></span>
-                                        <span class="legend-label">Number of Interfaces</span>
-                                    </li>
-                                </ul>
+                    </section>
+                    <section>
+                        <h6 class="title">motion picture productions</h6>
+                        <div class="data-one">
+                            <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat</p>
                             </div>
-                            <div class="legend-percentages">
-                                <ul>
-                                    <li class="legend-percentages-label">40%</li>
-                                    <li class="legend-percentages-label">15%</li>
-                                    <li class="legend-percentages-label">45%</li>
-                                </ul>
+                            <p class="view">View More &rarr;</p>
+                        </section>
+                        <section>
+                            <h6 class="title">searchlight</h6>
+                            <p class="title-description">Datacenter Overview</p>
+                            <div class="data-one">
+                                <div class="chart chart-three">
+                                    <div class="pie-chart"></div>
+                                    <div class="legend-names">
+                                        <ul>
+                                            <li class="legend-item">
+                                                <span class="legend-colorBox colorBox-one"></span>
+                                                <span class="legend-label">Number of Hosts Deployed</span>
+                                            </li>
+                                            <li class="legend-item">
+                                                <span class="legend-colorBox colorBox-two"></span>
+                                                <span class="legend-label">Number of Networks</span>
+                                            </li>
+                                            <li class="legend-item">
+                                                <span class="legend-colorBox colorBox-three"></span>
+                                                <span class="legend-label">Number of Interfaces</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="legend-percentages">
+                                        <ul>
+                                            <li class="legend-percentages-label">40%</li>
+                                            <li class="legend-percentages-label">15%</li>
+                                            <li class="legend-percentages-label">45%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                  
+                            <p class="view">View More &rarr;</p>
+                        </section>
+                        <section>
+                            <h6 class="title">tcc title</h6>
+                            <div class="data-one">
+                                <img src="images/image2.jpeg" alt="Network Link Image">
                             </div>
-                        </div>
+                            <p class="view">View More &rarr;</p>
+                        </section>
+                        <section>
+                            <h6 class="title">learn more</h6>
+                            <div class="data-one">
+                                <img src="images/image1.jpeg" alt="Analytics image">
+                            </div>
+                            <p class="view">View More &rarr;</p>
+                        </section>
                     </div>
-                    
-                   
-                    <p class="view">View More &rarr;</p>
-                </section>
-                <section>
-                    <h6 class="title">tcc title</h6>
-                    <div class="data-one">
-                    <img src="images/image2.jpeg" alt="Network Link Image">
-                    </div>
-                    <p class="view">View More &rarr;</p>
-
-                </section>
-                <section>
-                    <h6 class="title">learn more</h6>
-                    <div class="data-one">
-                    <img src="images/image1.jpeg" alt="Analytics image">
-                    </div>
-                    <p class="view">View More &rarr;</p>
-                </section>
-            </div>
-         </article>     
-        <footer>
-            <img class="company-logo" src="images/walt-disney.png " alt="The Walt Disney Studio logo">
+                </article>     
+            </main>
+                <footer>
+                    <img class="company-logo" src="images/walt-disney.png " alt="The Walt Disney Studio logo">
             <p>&copy;Copyright- The Walt Disney Studios - Studio technology - Motion Picture innovation</p>
         </footer>
     </div>
-    
-    
-    
-    <script defer src="script.js"></script>
 </body>
 </html>
